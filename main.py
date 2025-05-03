@@ -38,7 +38,6 @@ def main():
                 print("Game over!")
                 raise SystemExit
             
-        for asteroid in asteroids:
             for shot in shots:
                 if asteroid.check_collision(shot) == True:
                     asteroid.split()
